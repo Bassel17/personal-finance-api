@@ -1,0 +1,24 @@
+{
+  "name": "personal-finance-api",
+  "version": "1.0.0",
+  "repository": "https://github.com/Bassel17/personal-finance-api.git",
+  "author": "Bassel Kanso <basselkanso82@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev":"nodemon dist/index.js",
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "koa": "^2.13.4"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "nodemon": "^2.0.16",
+    "parcel": "^2.6.0",
+    "typescript": "^4.7.2"
+  }
+}
