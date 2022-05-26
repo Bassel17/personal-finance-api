@@ -1,8 +1,20 @@
-import Koa from 'koa';
-const app = new Koa();
+import Koa, {Context} from 'koa';
+import Router from 'koa-router';
 
-app.use(async (ctx: { body: string; }) => {
+const app = new Koa();
+const router = new Router();
+
+router.get('/', (ctx: Context) => {
   ctx.body = 'Hello World';
 });
 
+
+app.use(router.routes());
+
 app.listen(process.env.PORT);
+
+console.info(`Listening to http://localhost:${process.env.PORT} 🚀`);
+
+export {
+  app
+};
