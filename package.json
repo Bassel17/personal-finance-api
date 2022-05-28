@@ -7,11 +7,6 @@
   "private": false,
   "source": "src/index.ts",
   "main": "dist/index.js",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*": "yarn format"
   },
