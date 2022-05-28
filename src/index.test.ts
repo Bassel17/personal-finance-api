@@ -1,8 +1,8 @@
-import request from 'supertest';
-import {app} from './index';
+import request from "supertest";
+import { app } from "./index";
 
-test('Hello world works', async () => {
-    const response = await request(app.callback()).get('/');
-    expect(response.status).toBe(200);
-    expect(response.text).toBe('Hello World');
+test("Hello world works", async () => {
+  const response = await request(app.callback()).get("/");
+  expect(response.status).toBe(200);
+  expect(response.text).toBe("Hello World");
 });
